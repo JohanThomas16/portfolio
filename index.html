@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Johan Thomas Isaac - Frontend Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon1.jpg">
+</head>
+<body>
+    <!-- Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span>JTI</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+                <div class="shape shape-5"></div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="highlight">Johan Thomas Isaac</span>
+                </h1>
+                <div class="typewriter-container">
+                    <span class="typewriter-text">Frontend Developer</span>
+                    <span class="typewriter-cursor">|</span>
+                </div>
+                <p class="hero-description">
+                    Software Engineer specializing in frontend development and full-stack web applications, complemented by data analysis and UI/UX design capabilities. Proficient in Python, JavaScript, SQL, with hands-on experience primarily in React, Typescript, Next.js, Tailwind CSS. Adept at solving complex problems with a focus on building scalable and maintainable software solutions.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="avatar">
+                    <div class="avatar-inner">
+                        <img src="/assets/503596618_18319328323230009_7934619893675934639_n.jpg" alt="Johan Thomas Isaac" class="profile-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="social-links">
+            <a href="https://linkedin.com/in/johan-thomas-isaac-84074a1a6" target="_blank" class="social-link">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/JohanThomas16" target="_blank" class="social-link">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="mailto:johanthomas1357@gmail.com" class="social-link">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-text">
+                        I'm a passionate Frontend Developer based in <span class="highlight">Bangalore, Karnataka</span>, 
+                        with a B.Tech in Computer Science from Christ University Currently working at 
+                        <span class="highlight">Converj Global Private Limited</span>, I specialize in building scalable UI components 
+                        and crafting exceptional user experiences.
+                    </p>
+                    <p>
+                         My journey began with a fascination for how technology transforms user experiences. From crafting AI-driven features in React and Next.js to developing full-stack applications with Go and PostgreSQL, I blend UI/UX design principles wireframing in Figma, prototyping high fidelity interfaces with frontend expertise in TypeScript, Tailwind CSS, and responsive HTML5 to deliver intuitive, high-performance products.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>8+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat">
+                            <h3>1+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h3>7+</h3>
+                            <p>Certifications</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <!-- <div class="about-avatar"> -->
+                        <!-- <div class="avatar-background"></div> -->
+                        <img src="https://via.placeholder.com/200x200/F59E0B/FFFFFF?text=JTI" alt="  " class="about-profile-image">
+                    <!-- </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills &amp; Technologies</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-content">
+                <div class="skills-grid">
+                    <div class="skill-card" data-skill="python">
+                        <div class="skill-icon">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <h4>Python</h4>
+                        <div class="skill-progress">
+                            <div class="progress-bar" data-progress="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-skill="react">
+                        <div class="skill-icon">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <h4>React JS</h4>
+                        <div class="skill-progress">
+                            <div class="progress-bar" data-progress="95"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-skill="tailwind">
+                        <div class="skill-icon">
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                        <h4>Tailwind CSS</h4>
+                        <div class="skill-progress">
+                            <div class="progress-bar" data-progress="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-skill="react-native">
+                        <div class="skill-icon">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <h4>React Native</h4>
+                        <div class="skill-progress">
+                            <div class="progress-bar" data-progress="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-skill="javascript">
+                        <div class="skill-icon">
+                            <i class="fab fa-js-square"></i>
+                        </div>
+                        <h4>JavaScript</h4>
+                        <div class="skill-progress">
+                            <div class="progress-bar" data-progress="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-skill="mongodb">
+                        <div class="skill-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h4>MongoDB</h4>
+                        <div class="skill-progress">
+                            <div class="progress-bar" data-progress="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-skill="figma">
+                        <div class="skill-icon">
+                            <i class="fas fa-magic"></i>
+                        </div>
+                        <h4>Figma</h4>
+                        <div class="skill-progress">
+                            <div class="progress-bar" data-progress="75"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-skill="html">
+                        <div class="skill-icon">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <h4>HTML5</h4>
+                        <div class="skill-progress">
+                            <div class="progress-bar" data-progress="95"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-skill="express">
+                        <div class="skill-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h4>ExpressJS</h4>
+                        <div class="skill-progress">
+                            <div class="progress-bar" data-progress="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-skill="postgresql">
+                        <div class="skill-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h4>PostgreSQL</h4>
+                        <div class="skill-progress">
+                            <div class="progress-bar" data-progress="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-skill="nextjs">
+                        <div class="skill-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h4>NextJS</h4>
+                        <div class="skill-progress">
+                            <div class="progress-bar" data-progress="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-skill="typescript">
+                        <div class="skill-icon">
+                            <i class="fab fa-js-square"></i>
+                        </div>
+                        <h4>TypeScript</h4>
+                        <div class="skill-progress">
+                            <div class="progress-bar" data-progress="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-skill="nodejs">
+                        <div class="skill-icon">
+                            <i class="fab fa-node-js"></i>
+                        </div>
+                        <h4>NodeJS</h4>
+                        <div class="skill-progress">
+                            <div class="progress-bar" data-progress="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-skill="framer">
+                        <div class="skill-icon">
+                            <i class="fas fa-magic"></i>
+                        </div>
+                        <h4>Framer</h4>
+                        <div class="skill-progress">
+                            <div class="progress-bar" data-progress="75"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-skill="seo">
+                        <div class="skill-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h4>Technical SEO</h4>
+                        <div class="skill-progress">
+                            <div class="progress-bar" data-progress="80"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/assets/Screenshot 2025-10-16 170144.png" alt="Creative Agency Portfolio Screenshot" class="project-screenshot">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://creative-agency-livid.vercel.app" target="_blank" class="btn btn-primary">Live Demo</a>
+                                <a href="https://github.com/JohanThomas16/creative-agency" target="_blank" class="btn btn-secondary">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-year">2025</span>
+                            <span class="project-type">Frontend Showcase</span>
+                        </div>
+                        <h3 class="project-title">Creative Agency Portfolio</h3>
+                        <p class="project-description">
+                            Immersive creative agency portfolio showcasing advanced web animations and micro-interactions. Features 3D product showcases, interactive car configurators, and environmental storytelling.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">GSAP</span>
+                            <span class="tech-tag">Tailwind CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Framer Motion</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/Screenshot 2025-10-16 170328.png" alt="StudyMate Platform Screenshot" class="project-screenshot">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://studymate-47e2.vercel.app" target="_blank" class="btn btn-primary">Live Demo</a>
+                                <a href="https://github.com/JohanThomas16/studymate" target="_blank" class="btn btn-secondary">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-year">2025</span>
+                            <span class="project-type">Educational Platform</span>
+                        </div>
+                        <h3 class="project-title">StudyMate - AI-Powered Student Platform</h3>
+                        <p class="project-description">
+                            StudyMate is a web platform built to empower students with smart, AI-driven revision and learning support, combining modern TypeScript, Python, and JavaScript technologies. The platform delivers intelligent revision tools, personalized study guidance, and easy-to-use features to optimize the exam preparation process.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">AI Integration</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+    <div class="project-image">
+        <img src="assets/Screenshot 2025-10-17 200422.png" alt="MindFlow App Screenshot" class="project-screenshot">
+        <div class="project-overlay">
+            <div class="project-links">
+                <a href="https://white-style-77762794.figma.site/" target="_blank" class="btn btn-primary">Prototype</a>
+                <!-- <a href="https://github.com/JohanThomas16/mindflow-omnify" target="_blank" class="btn btn-secondary">GitHub</a> -->
+            </div>
+        </div>
+    </div>
+    <div class="project-content">
+        <div class="project-meta">
+            <span class="project-year">2025</span>
+            <span class="project-type">Mental Health App</span>
+        </div>
+        <h3 class="project-title">MindFlow – Crisis-First Wellness Platform</h3>
+        <p class="project-description">
+            MindFlow is a mobile-first mental health companion for young professionals, delivering immediate panic relief, AI-powered mood analysis, digital detox tools, work-life balance tracking, and personalized interventions via a clean, calming UI.
+        </p>
+        <div class="project-tech">
+            <span class="tech-tag">Figma</span>
+            <span class="tech-tag">React Native</span>
+            <span class="tech-tag">AI Integration</span>
+            <span class="tech-tag">Device Sync</span>
+            <span class="tech-tag">UI/UX Design</span>
+        </div>
+    </div>
+</div>
+
+                <!-- <div class="project-card">
+                    <div class="project-image">
+                        <img src="/assets/Screenshot 2025-10-16 170235.png" alt="MindleCap Wellness Platform Screenshot" class="project-screenshot">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://mental0-wellness-lendingpage.onrender.com" target="_blank" class="btn btn-primary">Live Demo</a>
+                                <a href="https://github.com/JohanThomas16/MindleCap-" target="_blank" class="btn btn-secondary">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-year">2025</span>
+                            <span class="project-type">Healthcare Landing Page</span>
+                        </div>
+                        <h3 class="project-title">MindleCap - Mental Wellness Platform</h3>
+                        <p class="project-description">
+                            Comprehensive mental wellness landing page offering couple counseling, therapy matching, and wellness packages. Features modern UI/UX design with appointment booking, testimonials, and service packages ranging from basic wellness resources to premium 24/7 expert access.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Responsive Design</span>
+                        </div>
+                    </div>
+                </div> -->
+
+                  <div class="project-card">
+                    <div class="project-image">
+                                                                            <img src="/assets/Screenshot 2025-10-16 203913.png" alt="MindleCap Wellness Platform Screenshot" class="project-screenshot">
+
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://johanthomas1357.framer.website/page" target="_blank" class="btn btn-primary">Prototype</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-year">2025</span>
+                            <span class="project-type">No-Code Platform</span>
+                        </div>
+                        <h3 class="project-title">AI Dashboard &amp; Reporting Platform</h3>
+                        <p class="project-description">
+                            AI-powered dashboard generator creating interactive data visualizations using natural language prompts with no-code analytics UI and secure onboarding.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Framer</span>
+                            <span class="tech-tag">AI Integration</span>
+                            <span class="tech-tag">Data Visualization</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                                                <img src="/assets/Screenshot 2025-10-12 231556.png" alt="MindleCap Wellness Platform Screenshot" class="project-screenshot">
+
+                        <div class="project-overlay">
+                            <div class="project-links">
+<a href="https://github.com/JohanThomas16/Blog-Project" target="_blank" class="btn btn-secondary">GitHub</a>                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-year">2025</span>
+                            <span class="project-type">Full Stack</span>
+                        </div>
+                        <h3 class="project-title">Full-Stack Blog Application with Go and Next JS</h3>
+                        <p class="project-description">
+                            Comprehensive blog platform using Go clean architecture and Next.js. Implemented RESTful API with JWT authentication and modern responsive UI components.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Go</span>
+                            <span class="tech-tag">Next.js</span>
+                            <span class="tech-tag">GORM</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">JWT</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                                                    <img src="/assets/500438475-608319e8-6bd7-4c19-b3ae-02ba1cd8b0ad.png" alt="MindleCap Wellness Platform Screenshot" class="project-screenshot">
+
+                        <div class="project-overlay">
+                            <div class="project-links">
+<a href="https://github.com/JohanThomas16/ai-advisor-app" target="_blank" class="btn btn-secondary">GitHub</a>                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-year">2025</span>
+                            <span class="project-type">Mobile Application</span>
+                        </div>
+                        <h3 class="project-title">AI Product Advisor Mobile App</h3>
+                        <p class="project-description">
+                            React Native mobile application helping users discover, compare, and get personalized recommendations for AI tools and products with conversational AI advisor.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">AI Integration</span>
+                            <span class="tech-tag">Cross-platform</span>
+                        </div>
+                    </div>
+                </div>
+
+              
+
+                <div class="project-card">
+                    <div class="project-image">
+                                                    <img src="/assets/Screenshot 2025-10-17 202309.png" alt="MindleCap Wellness Platform Screenshot" class="project-screenshot">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://colab.research.google.com/drive/1StJaVibLJTPyC3X5NjhLHbep7GGe3WDH?authuser=1#scrollTo=Iw9KB_d2dyil" target="_blank" class="btn btn-secondary">Google Colab</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-year">2023</span>
+                            <span class="project-type">Data Science</span>
+                        </div>
+                        <h3 class="project-title">Gold Rate Analysis and Prediction</h3>
+                        <p class="project-description">
+                            Comprehensive analysis of 20 years of gold market data using multiple regression algorithms with Random Forest achieving highest accuracy for price forecasting.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Machine Learning</span>
+                            <span class="tech-tag">XGBoost</span>
+                            <span class="tech-tag">Random Forest</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                                                                            <img src="/assets/Screenshot 2025-10-17 203524.png" alt="MindleCap Wellness Platform Screenshot" class="project-screenshot">
+
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://drive.google.com/file/d/1pdr5USo4UCM_W7GS5TMX9bKdK5_T8qkE/view" target="_blank" class="btn btn-secondary">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-year">2023</span>
+                            <span class="project-type">Digital Marketing</span>
+                        </div>
+                        <h3 class="project-title">Digital Marketing Campaign for Elite Builders</h3>
+                        <p class="project-description">
+                            Designed and executed comprehensive digital marketing strategy to enhance brand visibility utilizing SEO, social media campaigns, and analytics-driven optimization.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">SEO</span>
+                            <span class="tech-tag">Social Media Marketing</span>
+                            <span class="tech-tag">Google Analytics</span>
+                            <span class="tech-tag">Technical SEO</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Experience &amp; Certifications</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="experience-content">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Frontend Developer</h3>
+                            <h4>Converj Global Private Limited, Bangalore</h4>
+                            <span class="timeline-date">January 2025-Present, April 2024–May 2024</span>
+                            <ul>
+                                <li>Engineered modular, scalable, and reusable UI components</li>
+                                <li>Contributed to debugging and resolving UI/UX inconsistencies</li>
+                                <li>Contributed to feature development through code reviews</li>
+                                <li>Modern JavaScript frameworks and typed languages expertise</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Python and Machine Learning Intern</h3>
+                            <h4>Camino Infotech, Kalamassery</h4>
+                            <span class="timeline-date">May 2023–June 2023</span>
+                            <ul>
+                                <li>Performed Gold Rate Analysis using Python with 20 years dataset</li>
+                                <li>Applied data preprocessing and predictive modeling techniques</li>
+                                <li>Gained experience in data visualization and trend forecasting</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="certifications">
+                    <h3 class="certifications-title">Certifications</h3>
+                    <div class="certifications-grid">
+                        <a href="https://drive.google.com/file/d/1oL_PJ57UUTb9pCcp2ximDmBn5VL1IT10/view" target="_blank" class="cert-card">
+                            <div class="cert-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <h4>Career Essentials in Generative AI</h4>
+                            <p>Microsoft and LinkedIn</p>
+                        </a>
+                        <a href="https://drive.google.com/file/d/1Mv5hHHrn5ZuLVddxidSfwe0XaK5wTaym/view" target="_blank" class="cert-card">
+                            <div class="cert-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h4>Cybersecurity Essentials</h4>
+                            <p>CISCO</p>
+                        </a>
+                        <a href="https://www.linkedin.com/learning/certificates/350619e22d91c41e30e5a815e4cfc7c422cd4940e84be1dda3923e24c07d1a32?trk=share_certificate" target="_blank" class="cert-card">
+                            <div class="cert-icon">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <h4>Search Engine Optimization Professional Certificate</h4>
+                            <p>Moz</p>
+                        </a>
+                        <a href="https://drive.google.com/file/d/12whgBW9P0vRpeb-J-Dea37UInacBdTZA/view" target="_blank" class="cert-card">
+                            <div class="cert-icon">
+                                <i class="fas fa-project-diagram"></i>
+                            </div>
+                            <h4>Project Management</h4>
+                            <p>Swayam NPTEL</p>
+                        </a>
+                        <a href="https://drive.google.com/file/d/1irnN5DFJtR1-I7ucGAWrgYGPwFYP1llv/view" target="_blank" class="cert-card">
+                            <div class="cert-icon">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <h4>Python - Data Science and Machine Learning A-Z</h4>
+                            <p>Udemy</p>
+                        </a>
+                        <a href="https://drive.google.com/file/d/1UL35gx3ddbczhF0C_h-ewheyDWTMxxbC/view " target="_blank" class="cert-card">
+                            <div class="cert-icon">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <h4>Modern React with Redux</h4>
+                            <p>Udemy</p>
+                        </a>
+                        <a href="https://drive.google.com/file/d/1aAwnekd7UaABWypH1gg--fthh3HMIXdr/view" target="_blank" class="cert-card">
+                            <div class="cert-icon">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <h4>Python 101 for Data Science</h4>
+                            <p>IBM</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>johanthomas1357@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+919633468505</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Bangalore, Karnataka</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>LinkedIn</h4>
+                            <a href="https://linkedin.com/in/johan-thomas-isaac-84074a1a6" target="_blank">Connect with me</a>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full-width">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="modal-body">
+                <div class="modal-project-info">
+                    <h2 id="modal-title"></h2>
+                    <div class="modal-meta">
+                        <span id="modal-year"></span>
+                        <span id="modal-type"></span>
+                    </div>
+                    <p id="modal-description"></p>
+                    <div class="modal-highlights">
+                        <h4>Key Highlights:</h4>
+                        <ul id="modal-highlights-list"></ul>
+                    </div>
+                    <div class="modal-tech">
+                        <h4>Technologies Used:</h4>
+                        <div id="modal-tech-tags"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 Johan Thomas Isaac. All rights reserved.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://linkedin.com/in/johan-thomas-isaac-84074a1a6" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/JohanThomas16" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:johanthomas1357@gmail.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
