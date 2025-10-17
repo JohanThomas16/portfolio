@@ -1918,70 +1918,335 @@ body {
     display: flex;
   }
   
-  .hero-content {
-    grid-template-columns: 1fr;
-    text-align: center;
-    gap: var(--space-xl);
+  .hero {
+    min-height: 100vh;
+    padding: var(--space-xl) var(--space-md);
+    text-align: center; /* Global centering for hero */
+    overflow-x: hidden;
   }
-  
+
+  .hero-content {
+    display: flex; /* Switch to flex for simpler vertical stacking */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center all children horizontally */
+    gap: var(--space-xl); /* Maintain spacing between sections */
+  }
+
+  .hero-text {
+    width: 100%; /* Full width for centering */
+    text-align: center;
+    margin-bottom: var(--space-md); /* Ensure text is centered */
+  }
+
+  .hero-image {
+    order: -1; /* Move image to the top */
+     margin-top: var(--space-2xl);
+    margin-bottom: var(--space-xs); /* Space below image */
+    text-align: center; /* Center the image */
+  }
+
   .hero-title {
     font-size: var(--font-size-3xl);
+    margin-bottom: var(--space-md);
+    word-break: break-word;
+    overflow-wrap: break-word;
+    text-align: center; /* Explicitly center the title */
   }
-  
-  .social-links {
-    position: static;
-    flex-direction: row;
-    justify-content: center;
-    transform: none;
-    margin-top: var(--space-lg);
+
+  .typewriter-container {
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--space-md);
+    text-align: center; /* Center typewriter text */
   }
-  
-  .about-content {
-    grid-template-columns: 1fr;
-    text-align: center;
+
+  .hero-description {
+    font-size: var(--font-size-base);
+    margin-bottom: var(--space-lg);
+    max-width: 100%;
+    text-align: center; /* Center description */
   }
-  
-  .about-stats {
-    grid-template-columns: 1fr;
-  }
-  
-  .skills-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  .experience-content {
-    grid-template-columns: 1fr;
-  }
-  
-  .certifications-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  .contact-content {
-    grid-template-columns: 1fr;
-  }
-  
-  .footer-content {
+
+  .hero-buttons {
     flex-direction: column;
     gap: var(--space-md);
+    width: 100%;
+    text-align: center; /* Center buttons */
+  }
+
+  .btn {
+    padding: var(--space-md) var(--space-lg);
+    width: 100%;
+    font-size: var(--font-size-base);
+    text-align: center; /* Center button text */
+  }
+
+  .avatar {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto; /* Center the avatar */
+  }
+
+  .profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .social-links {
+    display: none;
+  }
+
+  .social-link {
+    width: 40px;
+    height: 40px;
+    font-size: var(--font-size-lg);
+  }
+
+  .scroll-indicator {
+    bottom: var(--space-md);
+  }
+
+  .floating-shapes .shape {
+    width: 20px;
+    height: 20px;
+  }
+
+  .floating-shapes .shape-3,
+  .floating-shapes .shape-4,
+  .floating-shapes .shape-5 {
+    display: none;
+  }
+  .experience-content {
+    display: flex; /* Use flex for vertical stacking */
+    flex-direction: column; /* Stack vertically */
+    gap: var(--space-xl); /* Space between sections */
+    width: 100%; /* Full width */
+    padding: 0 var(--space-md); /* Contain within screen */
+    overflow-x: hidden; /* Prevent horizontal overflow */
+  }
+
+  .timeline {
+    width: 100%; /* Full width */
+    position: relative;
+  }
+
+  .timeline::before {
+    left: 10px; /* Reduce left offset for mobile */
+    width: 2px;
+  }
+
+  .timeline-item {
+    padding-left: 40px; /* Reduce padding for mobile */
+    margin-bottom: var(--space-lg);
+  }
+
+  .timeline-dot {
+    left: 0; /* Adjust position for mobile */
+    width: 16px; /* Smaller dot */
+    height: 16px;
+  }
+
+  .timeline-content h3 {
+    font-size: var(--font-size-xl); /* Reduce heading size */
+    margin-bottom: var(--space-sm);
+  }
+
+  .timeline-content h4 {
+    font-size: var(--font-size-lg); /* Reduce subheading size */
+    margin-bottom: var(--space-sm);
+  }
+
+  .timeline-date {
+    font-size: var(--font-size-sm);
+    margin-bottom: var(--space-md);
+  }
+
+  .timeline-content ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  .timeline-content li {
+    padding-left: var(--space-md);
+    margin-bottom: var(--space-sm);
+    font-size: var(--font-size-base); /* Ensure readable text size */
+    line-height: 1.4; /* Improve readability */
+  }
+
+  .certifications {
+    width: 100%; /* Full width */
+    margin-top: var(--space-lg); /* Space above certifications */
+  }
+
+  .certifications-title {
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--space-md);
     text-align: center;
   }
-  
-  .hero-buttons {
-    justify-content: center;
+
+  .certifications-grid {
+    grid-template-columns: 1fr; /* Single column for certifications */
+    gap: var(--space-md);
+    width: 100%;
   }
-  
-  .project-filters {
-    justify-content: center;
+
+  .cert-card {
+    padding: var(--space-md); /* Reduce padding */
+    width: 100%;
+    text-align: center;
   }
-  
-  .modal-content {
-    width: 95%;
-    margin: 10% auto;
+
+  .cert-icon {
+    font-size: 1.5rem; /* Smaller icon */
+    margin-bottom: var(--space-sm);
+  }
+
+  .cert-card h4 {
+    font-size: var(--font-size-base); /* Reduce heading size */
+    margin-bottom: var(--space-xs);
+  }
+
+  .cert-card p {
+    font-size: var(--font-size-sm);
+  }
+  .contact-content {
+    display: flex; /* Use flex for vertical stacking */
+    flex-direction: column; /* Stack vertically */
+    gap: var(--space-xl); /* Space between sections */
+    width: 100%; /* Full width */
+    padding: 0 var(--space-md); /* Contain within screen */
+    overflow-x: hidden; /* Prevent horizontal overflow */
+  }
+
+  .contact-info {
+    width: 100%; /* Full width */
+    text-align: left; /* Center align text */
+  }
+
+  .contact-item {
+    font-size: var(--font-size-sm); /* Reduce font size */
+    margin-bottom: var(--space-md); /* Space between items */
+    display: flex;
+    align-items: left;
+    justify-content: left; /* Center the icon and text */
+  }
+
+  .contact-icon {
+    margin-right: var(--space-sm); /* Space between icon and text */
+    font-size: 1.5rem; /* Smaller icon size */
+  }
+
+  .contact-text {
+    font-size: var(--font-size-base); /* Readable text size */
+  }
+
+  .contact-form {
+    width: 100%; /* Full width */
+    margin-top: var(--space-lg); /* Space above form */
+  }
+
+  .form-group {
+    margin-bottom: var(--space-md); /* Space between form fields */
+  }
+
+  .form-label {
+    font-size: var(--font-size-base); /* Reduce label size */
+    margin-bottom: var(--space-xs);
+  }
+
+  .form-input,
+  .form-textarea {
+    width: 100%; /* Full width */
+    padding: var(--space-sm); /* Reduce padding */
+    font-size: var(--font-size-base); /* Readable text size */
+  }
+
+  .form-button {
+    padding: var(--space-md) var(--space-lg);
+    font-size: var(--font-size-base);
+    width: 100%; /* Full width button */
+    text-align: center;
+  }
+  .projects-content {
+    padding: 0 var(--space-md); /* Contain within screen */
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    text-align: center; /* Center align text */
+  }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column on mobile */
+    gap: var(--space-lg); /* Space between project cards */
+    justify-content: center; /* Center the grid items */
+    width: 100%;
+    max-width: 100%; /* Cap at container width */
+    margin: 0 auto; /* Center the grid */
+  }
+
+  .project-card {
+    width: 100%; /* Full width of the grid column */
+    max-width: 300px; /* Optional max width to control card size */
+    margin: 0 auto; /* Center each card */
+    padding: var(--space-md); /* Reduce padding */
+    text-align: center; /* Center card content */
+  }
+
+  .project-image {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: var(--space-md);
+  }
+
+  .project-title {
+    font-size: var(--font-size-xl); /* Reduce title size */
+    margin-bottom: var(--space-sm);
+  }
+
+  .project-description {
+    font-size: var(--font-size-base); /* Reduce description size */
+    margin-bottom: var(--space-md);
+  }
+
+  .project-links {
+    gap: var(--space-md); /* Space between links */
+  }
+
+  .project-link {
+    font-size: var(--font-size-base); /* Reduce link size */
+    padding: var(--space-sm) var(--space-md);
+  }
+  .about-content {
+    grid-template-columns: 1fr; /* Single column on mobile */
+    text-align: center; /* Center all text */
+    padding: 0 var(--space-md); /* Add padding to contain content */
+    max-width: 100%; /* Prevent overflow */
+    overflow-x: hidden; /* Hide horizontal overflow */
+  }
+
+  .about-intro {
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--space-lg);
+    max-width: 100%; /* Ensure text wraps */
+    word-break: break-word; /* Allow word breaking */
+    overflow-wrap: break-word; /* Prevent overflow */
+  }
+
+  .about-stats {
+    grid-template-columns: 1fr; /* Single column for stats */
+    gap: var(--space-md); /* Reduce gap */
+    width: 100%; /* Full width */
+  }
+
+  .stat {
+    padding: var(--space-md); /* Reduce padding */
+    width: 100%; /* Full width */
+  }
+
+  .about-avatar {
+    width: 100px; /* Reduce avatar size */
+    height: 100px;
+    margin: 0 auto var(--space-xl) auto; /* Center and space below */
   }
 }
 
@@ -1991,39 +2256,35 @@ body {
   }
   
   .hero {
-    padding: var(--space-xl) var(--space-md);
+    padding: var(--space-lg) var(--space-sm);
   }
-  
+
   .hero-title {
     font-size: var(--font-size-2xl);
+    word-break: break-word;
+    overflow-wrap: break-word;
+    text-align: center; /* Ensure centering on smaller screens */
   }
-  
+
   .typewriter-container {
-    font-size: var(--font-size-xl);
+    font-size: var(--font-size-lg);
+    text-align: center; /* Center on smaller screens */
   }
-  
+
   .avatar {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
   }
-  
-  .about-avatar {
-    width: 200px;
-    height: 200px;
-  }
-  
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
-  
+
   .hero-buttons {
     flex-direction: column;
     width: 100%;
   }
-  
+
   .btn {
     width: 100%;
   }
+  
 }
 
 /* Animations for scroll reveal */
