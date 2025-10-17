@@ -44,10 +44,12 @@ const projects = [
 ];
 
 const typewriterTexts = [
-  "Full Stack Developer",
-  "UI/UX Enthusiast",
-  "Machine Learning Explorer",
-  "Problem Solver"
+"Software Engineer",
+"Frontend Developer",
+"Product UI Innovator",
+"AI-Powered UI Designer",
+"Machine Learning Enthusiast",
+"UI/UX Designer",
 ];
 
 let typewriterIndex = 0;
