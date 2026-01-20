@@ -46,6 +46,7 @@ const projects = [
 const typewriterTexts = [
 "Software Engineer",
 "Frontend Developer",
+"Product Designer",
 "Product UI Innovator",
 "AI-Powered UI Designer",
 "Machine Learning Enthusiast",
